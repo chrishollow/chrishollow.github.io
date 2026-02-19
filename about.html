@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Profile - Christian Bokoto</title>
+
+    <!-- Fav Icons -->
+    <link rel="shortcut icon" href="assets/images/basquiat.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-5.9.0.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="assets/css/spacing.min.css" />
+    <link rel="stylesheet" href="assets/css/leaflet.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    
+    <style>
+        /* Logo adjustments */
+        .logo img {
+            max-width: 120px !important;
+            height: auto;
+        }
+        
+        @media (max-width: 991px) {
+            .logo img {
+                max-width: 100px !important;
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .logo img {
+                max-width: 80px !important;
+            }
+        }
+        
+        /* Banner height */
+        .page-banner {
+            height: 420px;
+        }
+        
+        @media (max-width: 991px) {
+            .page-banner {
+                height: 320px;
+            }
+        }
+        
+        /* COMPACT Footer */
+        .main-footer {
+            padding-top: 60px !important;
+        }
+        
+        .footer-logo {
+            margin-bottom: 30px !important;
+        }
+        
+        .contact-number h4 {
+            display: inline;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .contact-number h4:first-child {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .widget {
+            margin-bottom: 30px !important;
+        }
+        
+        .widget-title {
+            margin-bottom: 20px !important;
+        }
+        
+        .copyright-area {
+            margin-top: 30px !important;
+        }
+        
+        /* Core values cards with collapsible content */
+        .value-card {
+            padding: 30px;
+            background: #F3F3F5;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            border-left: 4px solid #E4E4E4;
+            cursor: pointer;
+        }
+        
+        .value-card:hover {
+            background: #fff;
+            border-left-color: var(--primary-color, #ffcc33);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .value-card .value-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary-color, #ffcc33);
+            line-height: 1;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .value-card h5 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--heading-color, #333);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .value-card h5::after {
+            content: '+';
+            font-size: 28px;
+            color: var(--primary-color, #ffcc33);
+            transition: transform 0.3s;
+        }
+        
+        .value-card.active h5::after {
+            content: '-';
+        }
+        
+        .value-card p {
+            margin-bottom: 0;
+            color: #666;
+            line-height: 27px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        
+        .value-card.active p {
+            max-height: 500px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        
+        <!-- START Main Header -->
+        <header class="main-header">
+            <div class="header-upper">
+                <div class="container clearfix">
+                    <div class="header-inner">
+                        <div class="logo-outer">
+                            <div class="logo"><a href="index.html"><img src="assets/images/basquiat.png" alt="Christian Bokoto Logo" /></a></div>
+                        </div>
+
+                        <div class="nav-outer clearfix">
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header clearfix">
+                                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="current-menu-item"><a href="about.html">Profile</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="menu-number">
+                            <a href="tel:+32487248788">+32 487 248 788</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END Main Header -->
+
+        <!-- START Page Banner -->
+        <section class="page-banner overlay">
+            <!-- Video Background -->
+            <video class="banner-video" autoplay muted loop playsinline>
+                <source src="assets/images/pf_bground.mp4" type="video/mp4">
+            </video>
+            <div class="banner-shape">
+                <img src="assets/images/shape/galaxy.gif" alt="Banner Shape" />
+            </div>
+            <div class="container">
+                <div class="banner-inner">
+                    <h1>My Story</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- END Page Banner -->
+
+        <!-- START About Page Content -->
+        <section class="about-page-content pt-115 rpt-95">
+            <div class="intro-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="intro-left">
+                                <span>Hello,</span>
+                                <h2>I'm Christian Bokoto</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="intro-right" style="text-align: justify;">
+                                <p>A highly motivated professional based in Brussels, Belgium, with a passion for technology and continuous learning. My journey spans from paramedical studies to becoming an IT technician, web developer, and project manager, demonstrating adaptability and a commitment to mastering new skills.</p>
+                                <p>Born on December 30, 1996, I bring a unique perspective to technology through my diverse background. My experience includes technical support at Bruxelles Environnement, fundraising campaign management at Greenpeace Belgium, and international leadership training through Erasmus+ programs.</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="video-area mt-100 rmt-80">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="what-i-do pt-90 rpt-70">
+                <div class="container">
+                    <div class="row mb-60">
+                        <div class="col-12">
+                            <div class="section-heading text-center" style="max-width: 700px; margin: auto;">
+                                <span>Core Values</span>
+                                <h2>Principles That Guide Me</h2>
+                                <p>The fundamental values that shape my approach to work, relationships, and life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="value-card">
+                                <div class="value-number">01</div>
+                                <h5>Austerity</h5>
+                                <p>Embracing simplicity and discipline in both personal and professional life. Focusing on what truly matters by eliminating excess and maintaining clarity of purpose. This principle guides efficient resource management and thoughtful decision-making.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="value-card">
+                                <div class="value-number">02</div>
+                                <h5>Sincerity</h5>
+                                <p>Committing to authenticity and honesty in all interactions. Building trust through transparent communication and genuine engagement. This value ensures integrity in relationships, whether with clients, colleagues, or communities.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="value-card">
+                                <div class="value-number">03</div>
+                                <h5>Cleanliness</h5>
+                                <p>Maintaining order, clarity, and precision in work and environment. This extends beyond physical spaces to clean code, clear documentation, and organized project structures. Excellence emerges from attention to detail and systematic approaches.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="value-card">
+                                <div class="value-number">04</div>
+                                <h5>Compassion</h5>
+                                <p>Leading with empathy and understanding toward others. Recognizing the human element in every project and interaction. This value drives user-centered design, supportive team environments, and solutions that truly serve people's needs.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="value-card">
+                                <div class="value-number">05</div>
+                                <h5>Accountability</h5>
+                                <p>Taking full ownership of commitments, actions, and outcomes. Meeting deadlines, maintaining quality standards, and following through on promises. This principle ensures reliability and builds lasting professional relationships.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="value-card">
+                                <div class="value-number">06</div>
+                                <h5>Resilience</h5>
+                                <p>Persevering through challenges with adaptability and determination. Learning from setbacks, embracing change, and maintaining forward momentum. This strength, developed through diverse experiences, enables continuous growth and success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END About Page Content -->
+
+        <!-- START About Section -->
+        <section class="about-section py-120 rpy-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-left-video">
+                            <img src="assets/images/about/about-man.jpg" alt="Christian Bokoto" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right-content">
+                            <div class="section-heading mb-50 rmb-40">
+                                <span>Why Me</span>
+                                <h2>What sets me apart?</h2>
+                                <p>A unique blend of technical expertise, communication skills, and international perspective gained through diverse professional experiences and Erasmus+ training.</p>
+                            </div>
+                            <ul class="about-list">
+                                <li><p>Multilingual professional: Fluent in French (native), English (C2), and Dutch (B1), enabling effective communication across European markets and international teams.</p></li>
+                                <li><p>Proven track record in both technical environments and people-focused roles, from IT infrastructure at Bruxelles Environnement to community engagement at Greenpeace Belgium.</p></li>
+                                <li><p>Committed to continuous learning and leadership development, as demonstrated by participation in the Erasmus+ Joyful Leadership program in Hungary.</p></li>
+                            </ul>
+                            <a href="assets/files/Christian_Bokoto_CV.pdf" class="theme-btn style-two mt-30 rmt-20" download><span>Download CV</span> <i class="flaticon-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END About Section -->
+
+        <!-- START Inspirations Section -->
+        <section class="testimonial-section about-page-testimonial pt-120 rpt-100 rpb-0">
+            <div class="container">
+                <div class="testimonial-wrap">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="author-images">
+                                <div class="author-image">
+                                    <img src="assets/images/testimonial/btSwami.JPG" alt="Inspiration Image">
+                                </div>
+                                <div class="author-image">
+                                    <img src="assets/images/testimonial/simonedB.jpg" alt="Inspiration Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="testimonial-right-content">
+                                <div class="section-heading mb-40 rmb-30">
+                                    <span>Inspirations</span>
+                                    <h2>Who and what shaped my values</h2>
+                                    <img src="assets/images/testimonial/heading-shape.png" alt="Section Heading Border Shape">
+                                </div>
+                                <div class="testimonials">
+                                    <div class="testimonial-item">
+                                        <p>"Humility does not mean to think yourself less, but to less think of yourself. Treat everyone you encounter as if the success of your life depends upon the quality of your interactions with them."</p>
+                                        <h6>His Holiness Bhakti Tirtha Swami</h6>
+                                        <span>Spiritual Activist</span>
+                                    </div>
+                                    <div class="testimonial-item">
+                                        <p>"One's life has value so long as one attributes value to the life of others by means of love, friendship, indignation and compassion."</p>
+                                        <h6>Simone de Beauvoir</h6>
+                                        <span>Author, Feminist Activist</span>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Inspirations Section -->
+
+        <!-- START Main Footer -->
+        <footer class="main-footer pt-120 rpt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <div class="widget logo-contact-widget">
+                            <div class="footer-logo mb-105 rmb-70">
+                                <a href="index.html"><img src="assets/images/basquiat.png" alt="Logo" /></a>
+                            </div>
+                            <div class="contact-number">
+                                <h4>More questions? Call me</h4>
+                                <h4><a href="tel:+32487248788">+32 487 248 788</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7 order-1 order-md-0">
+                        <div class="widget post-widget">
+                            <h6 class="widget-title">Latest Updates</h6>
+                            <div class="latest-post">
+                                <div class="post-item">
+                                    <h6><a href="assets/files/ JL.pdf">Completed Erasmus+ Leadership Training in Hungary</a></h6>
+                                    <span>December 2024</span>
+                                </div>
+                                <div class="post-item">
+                                    <h6><a href="services.html">New web development projects launching soon</a></h6>
+                                    <span>Spring 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-5">
+                        <div class="widget menu-widget">
+                            <h6 class="widget-title">Quick Links</h6>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="about.html">Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-5 order-2">
+                        <div class="widget menu-widget menu-widget-two">
+                            <h6 class="widget-title">Connect</h6>
+                            <ul>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="/cdn-cgi/l/email-protection#aac9c2d8c3d9dec3cbc4c8c5c1c5dec5eacdc7cbc3c684c9c5c7">Email</a></li>
+                                <li><a href="assets/files/Christian_Bokoto_CV.pdf" download>Download CV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright Area-->
+            <div class="copyright-area mt-65 rmt-50">
+               <div class="container">
+                    <div class="copyright-inner">
+                        <div class="copyright-wrap order-2 order-lg-1">
+                            <p>Copyright © 2026 Christian Bokoto. All Rights Reserved</p>
+                        </div>
+                        <ul class="footer-menu order-1 order-lg-2">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END Main Footer -->
+
+    </div>
+    <!--End pagewrapper-->
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top scroll-to-target" data-target="html"><i class="fas fa-chevron-up"></i></button>
+
+    
+    <!-- jQuery Plugins -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!--[if lt IE 9]><script src="assets/js/html5shiv.min.js"></script><![endif]-->
+    <script src="assets/js/bootstrap-5.0.0.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup-1.1.0.min.js"></script>
+    <script src="assets/js/circle-progress-1.2.2.min.js"></script>
+    <script src="assets/js/skill.bars.jquery.min.js"></script>
+    <script src="assets/js/leaflet-1.4.0.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Value card collapse/expand functionality
+        $(document).ready(function() {
+            $('.value-card').on('click', function() {
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

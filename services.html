@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Services - Christian Bokoto</title>
+
+    <!-- Fav Icons -->
+    <link rel="shortcut icon" href="assets/images/basquiat.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-5.9.0.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="assets/css/spacing.min.css" />
+    <link rel="stylesheet" href="assets/css/leaflet.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    
+    <style>
+        /* Logo adjustments */
+        .logo img {
+            max-width: 120px !important;
+            height: auto;
+        }
+        
+        @media (max-width: 991px) {
+            .logo img {
+                max-width: 100px !important;
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .logo img {
+                max-width: 80px !important;
+            }
+        }
+        
+        /* Banner height */
+        .page-banner {
+            height: 420px;
+        }
+        
+        @media (max-width: 991px) {
+            .page-banner {
+                height: 320px;
+            }
+        }
+        
+        /* COMPACT Footer */
+        .main-footer {
+            padding-top: 60px !important;
+        }
+        
+        .footer-logo {
+            margin-bottom: 30px !important;
+        }
+        
+        .contact-number h4 {
+            display: inline;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .contact-number h4:first-child {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .widget {
+            margin-bottom: 30px !important;
+        }
+        
+        .widget-title {
+            margin-bottom: 20px !important;
+        }
+        
+        .copyright-area {
+            margin-top: 30px !important;
+        }
+        
+        /* Service overview cards with collapsible content */
+        .service-overview-card {
+            padding: 30px;
+            background: #F3F3F5;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border-left: 4px solid #E4E4E4;
+        }
+        
+        .service-overview-card:hover {
+            background: #fff;
+            border-left-color: var(--primary-color, #ffcc33);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-overview-card .service-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary-color, #ffcc33);
+            line-height: 1;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .service-overview-card h5 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--heading-color, #333);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .service-overview-card h5::after {
+            content: '+';
+            font-size: 28px;
+            color: var(--primary-color, #ffcc33);
+            transition: transform 0.3s;
+        }
+        
+        .service-overview-card.active h5::after {
+            content: '-';
+        }
+        
+        .service-overview-card p {
+            margin-bottom: 0;
+            color: #666;
+            line-height: 27px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        
+        .service-overview-card.active p {
+            max-height: 500px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        
+        <!-- START Main Header -->
+        <header class="main-header">
+            <div class="header-upper">
+                <div class="container clearfix">
+                    <div class="header-inner">
+                        <div class="logo-outer">
+                            <div class="logo"><a href="index.html"><img src="assets/images/basquiat.png" alt="Christian Bokoto Logo" /></a></div>
+                        </div>
+
+                        <div class="nav-outer clearfix">
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header clearfix">
+                                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li class="current-menu-item"><a href="services.html">Services</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="about.html">Profile</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="menu-number">
+                            <a href="tel:+32487248788">+32 487 248 788</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END Main Header -->
+
+        <!-- START Page Banner -->
+        <section class="page-banner overlay">
+            <!-- Video Background -->
+            <video class="banner-video" autoplay muted loop playsinline>
+                <source src="assets/images/pf_bground.mp4" type="video/mp4">
+            </video>
+            <div class="banner-shape">
+                <img src="assets/images/shape/galaxy.gif" alt="Banner Shape" />
+            </div>
+            <div class="container">
+                <div class="banner-inner">
+                    <h1>My Services</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Services</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- END Page Banner -->
+
+        <!-- START Service Details Content -->
+        <section class="service-details-content py-120 rpt-100 rpb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="web-development-content rmb-50">
+                            <h2>Project Management Excellence</h2>
+                            <p>With a unique blend of technical expertise, strategic thinking, and people-centered leadership, I bring a holistic approach to project management. My experience spans IT infrastructure at Bruxelles Environnement, community engagement at Greenpeace Belgium, and international leadership development through Erasmus+ programs.</p>
+                            <p>I excel at strategic planning, risk management, and stakeholder communication. Every project is approached with meticulous documentation, clear milestones, and adaptive problem-solving. My IT background ensures I understand technical constraints and opportunities, while my fundraising experience has sharpened my ability to articulate vision, persuade stakeholders, and maintain team motivation through complex challenges.</p>
+                            <p>Trained in Joyful Leadership methodologies during the Erasmus+ program in Hungary (December 2024), I bring proven techniques in communication, strategic thinking, and team mentorship. I don't just manage tasks, I foster core values, understand different leadership styles, and create environments where teams thrive and deliver exceptional results.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="web-development-image">
+                            <img src="assets/images/service/web-picture.jpeg" alt="Project Management" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-middle-content mt-100 rmt-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="how-to-start rmb-50">
+                                <img src="assets/images/service/web-start.jpeg" alt="My Approach" />
+                                <h4>My Approach</h4>
+                                <p>Every project begins with deep stakeholder engagement and clear goal definition. Drawing from my diverse background, I establish comprehensive documentation, identify risks early, and create adaptive strategies that respond to changing conditions.</p>
+                                <p>I leverage system thinking to understand how different project components interact, ensuring decisions consider both immediate impacts and long-term consequences. Communication remains central, I maintain transparent progress updates, facilitate collaboration across teams, and ensure everyone understands their role in the bigger picture.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="when-to-start">
+                                <img src="assets/images/service/web-core.jpeg" alt="Core Competencies" />
+                                <h4>Core Competencies</h4>
+                                <p>My technical foundation from IT infrastructure work at Bruxelles Environnement provides deep understanding of system architecture, network dependencies, and technical risk factors. This ensures realistic project timelines, accurate resource allocation, and effective technical team coordination.</p>
+                                <p>Experience in fundraising campaign planning at Greenpeace Belgium has refined my skills in strategic narrative development, stakeholder persuasion, and team motivation under pressure. Combined with Joyful Leadership training, I bring sophisticated tools for conflict resolution, effective delegation, and creating high-performance team cultures where individuals feel valued and empowered to contribute their best work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Service Details Content -->
+
+        <!-- START Core Skills Section -->
+        <section class="related-services-section mb-120 rmb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-60">
+                        <div class="section-heading text-center" style="max-width: 700px; margin: auto;">
+                            <span>Core Competencies</span>
+                            <h2>Skills That Drive Success</h2>
+                            <p>A comprehensive skill set developed through diverse professional experiences and specialized leadership training.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="service-overview-card">
+                            <div class="service-number">01</div>
+                            <h5>Web Development</h5>
+                            <p>Full-stack web development using HTML5, CSS3, and JavaScript. Creating responsive, user-friendly applications with modern frameworks. Experience in front-end design, back-end logic, database integration, and deployment. Focus on clean code, performance optimization, accessibility standards, and SEO best practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-overview-card">
+                            <div class="service-number">02</div>
+                            <h5>IT Technical Support</h5>
+                            <p>Comprehensive technical troubleshooting for hardware and software systems. Network configuration, system maintenance, and IT asset management. Experience with installation, configuration, remote support, and inventory management. Proven ability to resolve complex technical issues while maintaining excellent user experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-overview-card">
+                            <div class="service-number">03</div>
+                            <h5>Project Management</h5>
+                            <p>Strategic planning, risk management, and comprehensive project documentation. Experience coordinating technical teams, fundraising campaigns, and international collaborations. Skilled in milestone tracking, stakeholder communication, adaptive problem-solving, and delivering projects on time while maintaining quality standards.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-overview-card">
+                            <div class="service-number">04</div>
+                            <h5>Leadership</h5>
+                            <p>Trained in Joyful Leadership methodologies through Erasmus+ program. Skills include team mentorship, fostering core values, understanding different leadership styles, conflict resolution, and creating high-performance team cultures. Experience leading technical teams and coordinating community engagement initiatives.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-overview-card">
+                            <div class="service-number">05</div>
+                            <h5>Effective Communication</h5>
+                            <p>Multilingual professional fluent in French (native), English (C2), and Dutch (B1). Skilled in stakeholder engagement, persuasive presentation, technical documentation, and cross-cultural communication. Experience articulating complex technical concepts to non-technical audiences and building consensus across diverse teams.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-overview-card">
+                            <div class="service-number">06</div>
+                            <h5>System Thinking</h5>
+                            <p>Holistic approach to problem-solving that considers interdependencies, long-term consequences, and systemic impacts. Understanding how technical, human, and organizational elements interact. Ability to identify root causes, anticipate cascade effects, and design solutions that create sustainable positive outcomes across entire systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Core Skills Section -->
+
+        <!-- START Main Footer -->
+        <footer class="main-footer pt-120 rpt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <div class="widget logo-contact-widget">
+                            <div class="footer-logo mb-105 rmb-70">
+                                <a href="index.html"><img src="assets/images/basquiat.png" alt="Logo" /></a>
+                            </div>
+                            <div class="contact-number">
+                                <h4>More questions? Call me</h4>
+                                <h4><a href="tel:+32487248788">+32 487 248 788</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7 order-1 order-md-0">
+                        <div class="widget post-widget">
+                            <h6 class="widget-title">Latest Updates</h6>
+                            <div class="latest-post">
+                                <div class="post-item">
+                                    <h6><a href="assets/files/ JL.pdf">Completed Erasmus+ Leadership Training in Hungary</a></h6>
+                                    <span>December 2024</span>
+                                </div>
+                                <div class="post-item">
+                                    <h6><a href="services.html">New web development projects launching soon</a></h6>
+                                    <span>Spring 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-5">
+                        <div class="widget menu-widget">
+                            <h6 class="widget-title">Quick Links</h6>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="about.html">Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-5 order-2">
+                        <div class="widget menu-widget menu-widget-two">
+                            <h6 class="widget-title">Connect</h6>
+                            <ul>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="/cdn-cgi/l/email-protection#aac9c2d8c3d9dec3cbc4c8c5c1c5dec5eacdc7cbc3c684c9c5c7">Email</a></li>
+                                <li><a href="assets/files/Christian_Bokoto_CV.pdf" download>Download CV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright Area-->
+            <div class="copyright-area mt-65 rmt-50">
+               <div class="container">
+                    <div class="copyright-inner">
+                        <div class="copyright-wrap order-2 order-lg-1">
+                            <p>Copyright © 2026 Christian Bokoto. All Rights Reserved</p>
+                        </div>
+                        <ul class="footer-menu order-1 order-lg-2">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END Main Footer -->
+
+    </div>
+    <!--End pagewrapper-->
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top scroll-to-target" data-target="html"><i class="fas fa-chevron-up"></i></button>
+
+    
+    <!-- jQuery Plugins -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!--[if lt IE 9]><script src="assets/js/html5shiv.min.js"></script><![endif]-->
+    <script src="assets/js/bootstrap-5.0.0.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup-1.1.0.min.js"></script>
+    <script src="assets/js/circle-progress-1.2.2.min.js"></script>
+    <script src="assets/js/skill.bars.jquery.min.js"></script>
+    <script src="assets/js/leaflet-1.4.0.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Service overview card collapse/expand functionality
+        $(document).ready(function() {
+            $('.service-overview-card').on('click', function() {
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
